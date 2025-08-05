@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ahmad Saefudin Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom scrollbar style */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #1e293b;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #3b82f6;
+      border-radius: 10px;
+    }
+
+    /* Glowing text effect for headings */
+    .glow {
+      text-shadow:
+        0 0 5px #0fa,
+        0 0 10px #0fa,
+        0 0 20px #0fa,
+        0 0 40px #0fa;
+    }
+  </style>
+</head>
+
+<body class="bg-[#0f172a] text-slate-100 font-sans selection:bg-blue-500 selection:text-white">
+  <!-- Header / Navbar -->
+  <header class="sticky top-0 bg-gray-700 bg-opacity-90 backdrop-blur z-50">
+    <nav class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
+      <a href="#home" class="text-2xl font-extrabold text-cyan-400 hover:text-cyan-300">Ahmad <span class="text-blue-400">Saefudin</span></a>
+      <ul class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-wide text-slate-200">
+        <li><a href="#home" class="hover:text-cyan-300 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-cyan-300 transition">About</a></li>
+        <li><a href="#projects" class="hover:text-cyan-300 transition">Projects</a></li>
+        <li><a href="#skills" class="hover:text-cyan-300 transition">Skills</a></li>
+        <li><a href="#github" class="hover:text-cyan-300 transition">Github</a></li>
+        <li><a href="#certificates" class="hover:text-cyan-300 transition">Certificates</a></li>
+        <li><a href="#testimonials" class="hover:text-cyan-300 transition">Testimonials</a></li>
+        <li><a href="#contact" class="hover:text-cyan-300 transition">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-4 sm:px-6 md:px-12 relative bg-gradient-to-br from-[#0f172a] via-[#112240] to-[#0f172a]">
+    <p class="text-sm text-slate-400 mb-2">Hello, I'm</p>
+    <h1 class="text-5xl sm:text-6xl font-extrabold text-cyan-400 glow mb-2">Ahmad Saefudin</h1>
+    <p class="text-xl sm:text-2xl text-blue-400 mb-10">Network Administrator & Web Developer</p>
+    <div class="flex gap-4">
+      <a href="#projects" class="px-6 py-3 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full font-semibold hover:brightness-110 transition shadow-lg">View My Work</a>
+      <a href="#contact" class="px-6 py-3 border border-blue-500 text-blue-400 rounded-full font-semibold hover:bg-blue-800 hover:border-blue-700 transition">Contact Me</a>
+    </div>
+    <div class="mt-40 animate-bounce text-blue-400 text-3xl">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width: 2rem; height: 2rem;">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+    <h2 class="text-4xl font-extrabold text-cyan-400 glow mb-12 text-center">About Me</h2>
+    <div class="grid md:grid-cols-3 gap-12 items-center">
+      <div class="md:col-span-1 flex justify-center relative">
+        <div class="rounded-full border border-cyan-400 p-1 w-56 h-56 overflow-hidden">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d54127e4-9537-412c-88ed-2904b5e124e7.png" alt="Illustration of a person wearing a red hoodie standing on a mountain ridge, gazing at a bright blue sky with clouds and distant mountains in digital art style" class="rounded-full w-full h-full object-cover" onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/108dcf5e-b2d9-4c90-bed5-741dd722c55a.png';" />
+        </div>
+        <span class="absolute rounded-full bg-cyan-400 w-4 h-4 -top-0 -left-6 animate-ping"></span>
+      </div>
+      <div class="md:col-span-2 space-y-6 text-slate-300">
+        <p class="text-lg font-semibold">
+          I'm <span class="text-cyan-400 font-bold">Ahmad Saefudin</span>, a <span class="font-bold">Web Developer</span>
+        </p>
+        <p>
+          I specialize in building exceptional digital experiences that live on the internet. With a focus on creating elegant, efficient, and user-friendly applications, I bring ideas to life with code.
+        </p>
+        <p>
+          As a recent graduate in web development, I've worked on various projects during my studies and through freelance work—ranging from simple websites to applications with complex features. I enjoy combining technical skills with creative problem-solving to deliver effective and engaging solutions.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 text-sm">
+          <div class="flex items-center gap-3 bg-zinc-800 rounded-lg p-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-cyan-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-3-3.87M9 13a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm12 12v-1a2 2 0 0 0-2-2h-3l-4 4v-1a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v1"/>
+            </svg>
+            Jawa Tengah, Indonesia
+          </div>
+          <div class="flex items-center gap-3 bg-zinc-900 rounded-lg p-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0zm-6 4v5h4v-5"/>
+            </svg>
+            ssaaiiffuuddiinn117@gmail.com
+          </div>
+          <div class="flex items-center gap-3 bg-zinc-800 rounded-lg p-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1.21.44 2.39.89 3.5a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c1.11.45 2.29.76 3.5.89a2 2 0 0 1 1.72 2z"/>
+            </svg>
+            +62 8820 0378 9436
+          </div>
+          <div class="flex items-center gap-3 bg-zinc-900 rounded-lg p-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7M3 7V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2"/>
+              <path d="M16 3v4M8 3v4m7 10h.01M9 14h.01"/>
+            </svg>
+            Informatic Enggineering, Lulusan Sma N 1 Dempet
+          </div>
+        </div>
+        <div class="mt-8 flex gap-4">
+          <a href="#" class="px-6 py-3 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full font-semibold shadow-lg hover:brightness-110 transition flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="inline w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 5v14m7-7H5" />
+            </svg>
+            Download CV
+          </a>
+          <a href="#contact" class="px-6 py-3 border border-blue-500 text-blue-400 rounded-full font-semibold hover:bg-blue-800 hover:border-blue-700 transition flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="inline w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 12l19-7-7 19-2-7-7-2z" />
+            </svg>
+            Hire Me
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+    <h2 class="text-4xl font-extrabold text-cyan-400 glow mb-12 text-center">My Projects</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Project 1 -->
+      <article class="bg-zinc-900 rounded-xl p-6 flex flex-col justify-between hover:shadow-xl transition-shadow duration-300 shadow-cyan-600/20">
+        <div class="relative">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5e14031b-450b-4a5d-a0e7-144b43b9865a.png" alt="Screenshot of AI ChatBot project interface with dark purple-blue tones showing conversation UI and sidebar navigation" class="rounded-lg mb-4" onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8d156509-2855-4ccb-a635-7b070be40104.png';" />
+          <span class="absolute top-3 right-3 bg-cyan-500 text-xs px-2 py-0.5 rounded-full font-bold">New</span>
+        </div>
+        <h3 class="text-lg font-bold text-white mb-2">AI ChatBot by Ahmad Saefudin</h3>
+        <p class="text-xs text-slate-300 mb-4 flex-grow">
+          An intelligent AI-powered chatbot designed to interact naturally with users using natural language processing. Built to handle both general conversations and custom tasks, this chatbot integrates modern AI techniques and user-friendly UI/UX for an engaging experience. Developed by Ahmad Saefudin with a focus on performance, responsiveness, and scalability.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-orange-500 text-black rounded-full px-2 py-0.5 text-xs font-semibold">HTML</span>
+          <span class="bg-blue-600 text-white rounded-full px-2 py-0.5 text-xs font-semibold">CSS</span>
+          <span class="bg-yellow-400 text-black rounded-full px-2 py-0.5 text-xs font-semibold">JavaScript</span>
+          <span class="bg-purple-600 text-white rounded-full px-2 py-0.5 text-xs font-semibold">Gemini API</span>
+        </div>
+        <div class="flex gap-3">
+          <a href="#" class="flex-grow bg-cyan-500 text-black rounded-full text-center py-2 text-xs font-semibold hover:bg-cyan-600 transition">Demo</a>
+          <a href="#" class="flex-grow border border-cyan-500 rounded-full text-cyan-500 text-center py-2 text-xs font-semibold hover:bg-cyan-500 hover:text-black transition">Code</a>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="bg-zinc-900 rounded-xl p-6 flex flex-col justify-between hover:shadow-xl transition-shadow duration-300 shadow-orange-600/20">
+        <div class="relative">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/995b902c-ae89-48ca-a175-c6b8767b7f84.png" alt="Screenshot of Sistem Informasi Kurikulum OBE dashboard with charts and status indicators on a modern interface" class="rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x200/png?text=Image+Unavailable';" />
+          <span class="absolute top-3 right-3 bg-orange-500 text-xs px-2 py-0.5 rounded-full font-bold">Website</span>
+        </div>
+        <h3 class="text-lg font-bold text-white mb-2">Sistem Informasi Kurikulum OBE</h3>
+        <p class="text-xs text-slate-300 mb-4 flex-grow">
+          This Outcome-Based Education (OBE) Curriculum Design Information System was specifically developed for Poliban to support the curriculum development process in line with OBE principles. It facilitates structured mapping of learning outcomes (CPL), courses, and assessments, helping to enhance alignment, efficiency, and transparency in curriculum planning at Poliban.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-orange-500 text-black rounded-full px-2 py-0.5 text-xs font-semibold">HTML</span>
+          <span class="bg-sky-600 text-white rounded-full px-2 py-0.5 text-xs font-semibold">tailwind CSS</span>
+          <span class="bg-yellow-400 text-black rounded-full px-2 py-0.5 text-xs font-semibold">JavaScript</span>
+          <span class="bg-pink-500 text-white rounded-full px-2 py-0.5 text-xs font-semibold">MySql</span>
+          <span class="bg-purple-800 text-white rounded-full px-2 py-0.5 text-xs font-semibold">PHP</span>
+          <span class="bg-red-600 text-white rounded-full px-2 py-0.5 text-xs font-semibold">Laravel</span>
+          <span class="bg-pink-600 text-white rounded-full px-2 py-0.5 text-xs font-semibold">Figma</span>
+        </div>
+        <div class="flex gap-3">
+          <a href="#" class="flex-grow bg-cyan-500 text-black rounded-full text-center py-2 text-xs font-semibold hover:bg-cyan-600 transition">Demo</a>
+          <a href="#" class="flex-grow border border-cyan-500 rounded-full text-cyan-500 text-center py-2 text-xs font-semibold hover:bg-cyan-500 hover:text-black transition">Code</a>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="bg-zinc-900 rounded-xl p-6 flex flex-col justify-between hover:shadow-xl transition-shadow duration-300 shadow-pink-600/20">
+        <div class="relative">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/df160aa4-3ad3-4f55-8b73-3c889ff43972.png" alt="Screenshot of a complex large-scale LAN network design using Cisco Packet Tracer software with VLANs and routing protocols" class="rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x200/png?text=Image+Unavailable';" />
+          <span class="absolute top-3 right-3 bg-pink-500 text-xs px-2 py-0.5 rounded-full font-bold">Network</span>
+        </div>
+        <h3 class="text-lg font-bold text-white mb-2">Large-Scale LAN Design Using Cisco</h3>
+        <p class="text-xs text-slate-300 mb-4 flex-grow">
+          This project models a large-scale LAN design using Cisco Packet Tracer, aimed at optimizing connectivity, scalability, and network management in a corporate environment. The design includes configuration of switches, routers, VLANs, and routing protocols to ensure efficient network performance and security.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-blue-600 text-white rounded-full px-2 py-0.5 text-xs font-semibold">Cisco</span>
+          <span class="bg-red-600 text-white rounded-full px-2 py-0.5 text-xs font-semibold">VLAN</span>
+          <span class="bg-teal-500 text-white rounded-full px-2 py-0.5 text-xs font-semibold">Subnetting</span>
+          <span class="bg-purple-600 text-white rounded-full px-2 py-0.5 text-xs font-semibold">Simulation</span>
+        </div>
+        <div class="flex gap-3">
+          <a href="#" class="flex-grow bg-pink-500 text-white rounded-full text-center py-2 text-xs font-semibold hover:bg-pink-600 transition">Demo</a>
+          <a href="#" class="flex-grow border border-purple-600 rounded-full text-purple-600 text-center py-2 text-xs font-semibold hover:bg-purple-600 hover:text-white transition">File</a>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="bg-zinc-900 rounded-xl p-6 flex flex-col justify-between hover:shadow-xl transition-shadow duration-300 shadow-green-600/20">
+        <div class="relative">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a65dd596-af2f-496a-83d5-9f95a7c65030.png" alt="Screenshot of a bright colorful Snakes and Ladders board game application with purple-themed UI and interactive controls" class="rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x200/png?text=Image+Unavailable';" />
+          <span class="absolute top-3 right-3 bg-green-500 text-xs px-2 py-0.5 rounded-full font-bold">Game</span>
+        </div>
+        <h3 class="text-lg font-bold text-white mb-2">Snakes And Ladders Game</h3>
+        <p class="text-xs text-slate-300 mb-4 flex-grow">
+          A web-based Snakes and Ladders game built using HTML, CSS, and JavaScript. This classic board game is recreated with interactive features, allowing two players to roll dice, move pieces, and enjoy a nostalgic experience with smooth animations and responsive design. Perfect for casual play and fun.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-orange-500 text-black rounded-full px-2 py-0.5 text-xs font-semibold">html</span>
+          <span class="bg-blue-600 text-white rounded-full px-2 py-0.5 text-xs font-semibold">CSS</span>
+          <span class="bg-yellow-400 text-black rounded-full px-2 py-0.5 text-xs font-semibold">JavaScript</span>
+        </div>
+        <div class="flex gap-3">
+          <a href="#" class="flex-grow bg-cyan-500 text-black rounded-full text-center py-2 text-xs font-semibold hover:bg-cyan-600 transition">Demo</a>
+          <a href="#" class="flex-grow border border-cyan-500 rounded-full text-cyan-500 text-center py-2 text-xs font-semibold hover:bg-cyan-500 hover:text-black transition">Code</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+    <h2 class="text-4xl font-extrabold text-cyan-400 glow mb-12 text-center">My Skills</h2>
+    <h3 class="text-xl font-semibold text-cyan-400 mb-8 text-center">Technical Skills</h3>
+    <div class="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 gap-8 max-w-4xl mx-auto">
+      <!-- Skill Item -->
+      <div class="bg-zinc-900 rounded-lg flex flex-col items-center p-6 shadow-lg hover:shadow-cyan-600 transition duration-300">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ec962595-a21f-40c1-be20-a41b32f115ef.png" alt="Icon representing HTML5 in orange color with white HTML5 letters" class="mb-3 select-none" onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c4668d77-521f-4b45-b8ff-8564b8c14dbc.png';" />
+        <span class="text-sm font-semibold">HTML5</span>
+      </div>
+      <div class="bg-zinc-900 rounded-lg flex flex-col items-center p-6 shadow-lg hover:shadow-blue-600 transition duration-300">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/24f33968-24b5-4e35-8092-dd841c037083.png" alt="Icon representing Tailwind CSS with blue and white wind-like logo" class="mb-3 select-none" onerror="this.onerror=null;this.src='https://placehold.co/64x64/png?text=Icon+Unavailable';" />
+        <span class="text-sm font-semibold">Tailwind CSS</span>
+      </div>
+      <div class="bg-zinc-900 rounded-lg flex flex-col items-center p-6 shadow-lg hover:shadow-yellow-400 transition duration-300">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/730d478b-6e94-4a52-aef6-d482722a5e4d.png" alt="Icon representing JavaScript with golden yellow background and JS letters" class="mb-3 select-none" onerror="this.onerror=null;this.src='https://placehold.co/64x64/png?text=Icon+Unavailable';" />
+        <span class="text-sm font-semibold">JavaScript</span>
+      </div>
+      <div class="bg-zinc-900 rounded-lg flex flex-col items-center p-6 shadow-lg hover:shadow-blue-700 transition duration-300">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/24352cc4-04a8-49cd-a806-e29a1ac7e49c.png" alt="Icon representing Cisco network equipment stylized blue and white logo" class="mb-3 select-none" onerror="this.onerror=null;this.src='https://placehold.co/64x64/png?text=Icon+Unavailable';" />
+        <span class="text-sm font-semibold">Cisco</span>
+      </div>
+      <div class="bg-zinc-900 rounded-lg flex flex-col items-center p-6 shadow-lg hover:shadow-green-600 transition duration-300">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a287f098-4f35-4a2d-b448-126ae874d438.png" alt="Icon representing MySQL database with blue dolphin on light background" class="mb-3 select-none" onerror="this.onerror=null;this.src='https://placehold.co/64x64/png?text=Icon+Unavailable';" />
+        <span class="text-sm font-semibold">MySQL</span>
+      </div>
+      <div class="bg-zinc-900 rounded-lg flex flex-col items-center p-6 shadow-lg hover:shadow-purple-700 transition duration-300">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/669f5eae-032c-4afa-9227-e79cb75e7bdd.png" alt="Icon representing PHP programming language with dark blue elephant logo" class="mb-3 select-none" onerror="this.onerror=null;this.src='https://placehold.co/64x64/png?text=Icon+Unavailable';" />
+        <span class="text-sm font-semibold">PHP</span>
+      </div>
+      <div class="bg-zinc-900 rounded-lg flex flex-col items-center p-6 shadow-lg hover:shadow-red-600 transition duration-300">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5ec493e4-4638-4c16-9fc5-a557c8c7d892.png" alt="Icon representing Laravel PHP framework with red stylized L shape logo" class="mb-3 select-none" onerror="this.onerror=null;this.src='https://placehold.co/64x64/png?text=Icon+Unavailable';" />
+        <span class="text-sm font-semibold">Laravel</span>
+      </div>
+      <div class="bg-zinc-900 rounded-lg flex flex-col items-center p-6 shadow-lg hover:shadow-pink-700 transition duration-300">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/84511de7-be4f-4768-bb7a-9a42f0ddbcc6.png" alt="Icon representing Figma design tool with colorful F logo in rounded shapes" class="mb-3 select-none" onerror="this.onerror=null;this.src='https://placehold.co/64x64/png?text=Icon+Unavailable';" />
+        <span class="text-sm font-semibold">Figma</span>
+      </div>
+      <div class="bg-zinc-900 rounded-lg flex flex-col items-center p-6 shadow-lg hover:shadow-gray-500 transition duration-300">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/da962bb7-2b39-4ac6-bf29-5fd282f37ce9.png" alt="Icon representing GitHub platform with black cat silhouette in circle" class="mb-3 select-none" onerror="this.onerror=null;this.src='https://placehold.co/64x64/png?text=Icon+Unavailable';" />
+        <span class="text-sm font-semibold">GitHub</span>
+      </div>
+      <div class="bg-zinc-900 rounded-lg flex flex-col items-center p-6 shadow-lg hover:shadow-purple-700 transition duration-300">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f7085ff6-b2cc-4487-a48e-8677b771db56.png" alt="Icon representing Vercel deployment platform - black triangle on white" class="mb-3 select-none" onerror="this.onerror=null;this.src='https://placehold.co/64x64/png?text=Icon+Unavailable';" />
+        <span class="text-sm font-semibold">Vercel</span>
+      </div>
+      <div class="bg-zinc-900 rounded-lg flex flex-col items-center p-6 shadow-lg hover:shadow-green-600 transition duration-300">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6746afa0-84e4-4778-9a27-a3d702cbdada.png" alt="Icon representing Microsoft Excel spreadsheet application with green background sheet" class="mb-3 select-none" onerror="this.onerror=null;this.src='https://placehold.co/64x64/png?text=Icon+Unavailable';" />
+        <span class="text-sm font-semibold">Excel</span>
+      </div>
+      <div class="bg-zinc-900 rounded-lg flex flex-col items-center p-6 shadow-lg hover:shadow-blue-700 transition duration-300">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a4a222a4-4b79-47be-8a76-81550598a34d.png" alt="Icon representing Microsoft Word application with blue background sheet" class="mb-3 select-none" onerror="this.onerror=null;this.src='https://placehold.co/64x64/png?text=Icon+Unavailable';" />
+        <span class="text-sm font-semibold">Word</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Github Stats Section -->
+  <section id="github" class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+    <h2 class="text-3xl font-extrabold text-cyan-400 glow mb-10 text-center">GitHub Statistics</h2>
+    <div class="mb-8 p-4 bg-zinc-900 rounded-lg shadow-lg">
+      <img src="https://ghchart.rshah.org/ahmadsaefudin" alt="GitHub contribution graph of Ahmad Saefudin showing green squares representing daily contributions over the last year" class="w-full max-w-full h-28 object-contain" />
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-4 gap-6 max-w-4xl mx-auto text-center">
+      <div class="bg-zinc-800 rounded-lg p-6 shadow-lg">
+        <h3 class="text-3xl font-bold text-sky-400">12</h3>
+        <p class="text-sm text-slate-300">Public repositories</p>
+      </div>
+      <div class="bg-zinc-800 rounded-lg p-6 shadow-lg">
+        <h3 class="text-3xl font-bold text-yellow-400">3</h3>
+        <p class="text-sm text-slate-300">Stars received on projects</p>
+      </div>
+      <div class="bg-zinc-800 rounded-lg p-6 shadow-lg">
+        <h3 class="text-3xl font-bold text-green-400">10</h3>
+        <p class="text-sm text-slate-300">Contributions last year</p>
+      </div>
+      <div class="bg-zinc-800 rounded-lg p-6 shadow-lg">
+        <h3 class="text-3xl font-bold text-purple-400">10</h3>
+        <p class="text-sm text-slate-300">GitHub followers</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+    <h2 class="text-4xl font-extrabold text-cyan-400 glow mb-12 text-center">Certificates & Achievements</h2>
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+      <div class="bg-zinc-900 rounded-lg overflow-hidden shadow-lg hover:shadow-cyan-600 transition">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/65a114ab-38a7-44d9-853a-0e4cb4d30e39.png" alt="Digital certificate for Learn the Fundamentals of JavaScript Programming by Dicoding with official logo and signature" class="w-full object-cover" onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f738033a-a1b1-49b7-84d7-fbf1342a965b.png';" />
+        <div class="p-5">
+          <h3 class="text-lg font-bold mb-2 text-white">Learn the Fundamentals of JavaScript Programming</h3>
+          <p class="text-sm text-slate-400 mb-4">Dicoding</p>
+          <p class="text-xs text-slate-400">Learned the fundamentals of JavaScript as a core programming language in web development. Covered topics such as language structure, data types, operators, functions, control flow, and code modularization to build a strong foundation in programming logic.</p>
+        </div>
+      </div>
+      <div class="bg-zinc-900 rounded-lg overflow-hidden shadow-lg hover:shadow-orange-600 transition">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/425686e7-80ae-41b0-ae2a-abf9241a9343.png" alt="Digital certificate for Beginner Back-End Development with JavaScript issued by Dicoding with official logo and signature" class="w-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x250/png?text=Image+Unavailable';" />
+        <div class="p-5">
+          <h3 class="text-lg font-bold mb-2 text-white">Beginner Back-End Development with JavaScript</h3>
+          <p class="text-sm text-slate-400 mb-4">Dicoding</p>
+          <p class="text-xs text-slate-400">Successfully completed the Beginner Back-End Development with JavaScript course on Dicoding. Gained foundational skills in backend application development, including understanding servers, databases, and API creation.</p>
+        </div>
+      </div>
+      <div class="bg-zinc-900 rounded-lg overflow-hidden shadow-lg hover:shadow-blue-600 transition">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7f610373-82d9-49c6-8f49-c89a890a4b75.png" alt="Official certificate of CCNA 200-301 Certification Training from Simple Learn with logos and completion date" class="w-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x250/png?text=Image+Unavailable';" />
+        <div class="p-5">
+          <h3 class="text-lg font-bold mb-2 text-white">CCNA 200-301 Certification Training</h3>
+          <p class="text-sm text-slate-400 mb-4">Simple Learn</p>
+          <p class="text-xs text-slate-400">Completed comprehensive CCNA 200-301 training covering network fundamentals, routing and switching, IP addressing, network security, and troubleshooting. Gained practical knowledge to design, implement, and manage modern enterprise networks.</p>
+        </div>
+      </div>
+      <div class="bg-zinc-900 rounded-lg overflow-hidden shadow-lg hover:shadow-green-600 transition">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6446d68d-390f-4278-b420-1d80cd2694dc.png" alt="Certificate for Finding, Sorting, and Filtering Data in Microsoft Excel issued by Coursera with logo and details" class="w-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x250/png?text=Image+Unavailable';" />
+        <div class="p-5">
+          <h3 class="text-lg font-bold mb-2 text-white">Finding, Sorting, and Filtering Data in Microsoft Excel</h3>
+          <p class="text-sm text-slate-400 mb-4">Coursera</p>
+          <p class="text-xs text-slate-400">Completed a guided project on efficiently finding, sorting, and filtering data in Excel. Gained practical skills in organizing and analyzing datasets using built-in Excel tools to support decision-making and reporting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+    <h2 class="text-4xl font-extrabold text-cyan-400 glow mb-12 text-center">What Clients Say</h2>
+    <div class="relative max-w-6xl mx-auto space-y-8 md:space-y-0 md:grid md:grid-cols-3 md:gap-8">
+      <!-- Testimonial 1 -->
+      <div class="bg-zinc-900 rounded-lg p-6 shadow-lg hover:shadow-cyan-600 transition flex flex-col space-y-4">
+        <div>
+          <span class="text-yellow-400 text-lg font-bold select-none">★★★★★</span>
+          <span class="sr-only">5 out of 5 stars</span>
+        </div>
+        <p class="text-sm italic text-slate-300 flex-grow">"Working with Saefudin felt like playing Snakes and Ladders — but without hitting any snakes. His problem-solving skills kept our progress climbing, helping us reach the finish line faster than expected."</p>
+        <div class="flex items-center gap-3 mt-4">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3c5169ef-74a3-4350-b7fc-58eb48eae041.png" alt="Photo of Michael Chen CTO of InnovateLab, middle-aged Asian male with short hair and glasses" class="w-12 h-12 rounded-full object-cover" onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2488c7a5-6a1c-4e89-8b09-a28220b78661.png';" />
+          <div>
+            <h4 class="font-semibold text-white">Michael Chen</h4>
+            <p class="text-xs text-slate-400">CTO, InnovateLab</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-zinc-900 rounded-lg p-6 shadow-lg hover:shadow-cyan-600 transition flex flex-col space-y-4">
+        <div>
+          <span class="text-yellow-400 text-lg font-bold select-none">★★★★★</span>
+          <span class="sr-only">5 out of 5 stars</span>
+        </div>
+        <p class="text-sm italic text-slate-300 flex-grow">"The AI chatbot Saefudin developed for us has revolutionized our customer service. His understanding of both frontend and backend technologies is impressive."</p>
+        <div class="flex items-center gap-3 mt-4">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c2b0510c-c578-4578-a481-e4e0b9b3bd7c.png" alt="Photo of David Kim founder of AI Solutions, middle-aged Black male with short hair and smiling expression" class="w-12 h-12 rounded-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/50x50/png?text=Photo+Unavailable';" />
+          <div>
+            <h4 class="font-semibold text-white">David Kim</h4>
+            <p class="text-xs text-slate-400">Founder, AI Solutions</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-zinc-900 rounded-lg p-6 shadow-lg hover:shadow-cyan-600 transition flex flex-col space-y-4">
+        <div>
+          <span class="text-yellow-400 text-lg font-bold select-none">★★★★★</span>
+          <span class="sr-only">5 out of 5 stars</span>
+        </div>
+        <p class="text-sm italic text-slate-300 flex-grow">"Saefudin's work on our financial dashboard was outstanding. The data visualization and real-time updates work flawlessly. Professional and reliable developer."</p>
+        <div class="flex items-center gap-3 mt-4">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/de13792e-64d7-4d54-accf-aba3cf5ca6ac.png" alt="Photo of Lisa Thompson Director at FinTech Pro, middle-aged woman with glasses and smiling" class="w-12 h-12 rounded-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/50x50/png?text=Photo+Unavailable';" />
+          <div>
+            <h4 class="font-semibold text-white">Lisa Thompson</h4>
+            <p class="text-xs text-slate-400">Director, FinTech Pro</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto grid grid-cols-4 gap-4 mt-12 text-center text-slate-400">
+      <div>
+        <p class="text-3xl font-bold text-cyan-400">3</p>
+        <p class="text-xs">Happy Clients</p>
+      </div>
+      <div>
+        <p class="text-3xl font-bold text-green-400">100</p>
+        <p class="text-xs">Success Rate %</p>
+      </div>
+      <div>
+        <p class="text-3xl font-bold text-purple-400">5</p>
+        <p class="text-xs">Projects Completed</p>
+      </div>
+      <div>
+        <p class="text-3xl font-bold text-yellow-400">5.0</p>
+        <p class="text-xs">Average Rating</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+    <h2 class="text-4xl font-extrabold text-cyan-400 glow mb-12 text-center">Contact Information</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl mx-auto">
+      <div class="space-y-6 text-slate-300">
+        <div class="bg-zinc-900 rounded-lg p-6 flex items-center gap-4 shadow-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+            <circle cx="12" cy="9" r="2.5" />
+          </svg>
+          <p>Banjarmasin, Indonesia</p>
+        </div>
+        <div class="bg-zinc-900 rounded-lg p-6 flex items-center gap-4 shadow-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M21 8v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8M21 8l-9 6-9-6" />
+          </svg>
+          <p>tpublicml@gmail.com</p>
+        </div>
+        <div class="bg-zinc-900 rounded-lg p-6 flex items-center gap-4 shadow-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-purple-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 12 18.42a19.5 19.5 0 0 1-7.82 3.45A2 2 0 0 1 2 19.91v-3a2 2 0 0 1 2-2c.94 0 1.88.32 2.62.9l1.1-1.1A12.05 12.05 0 0 1 12 12a12.05 12.05 0 0 1 4.28 8.18l1.1 1.1a3 3 0 0 0 2.62-.9 2 2 0 0 1 2 2z" />
+          </svg>
+          <p>+62 852 4886 7449</p>
+        </div>
+        <div class="bg-zinc-900 rounded-lg p-6 flex items-center gap-4 shadow-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <path d="M12 2a10 10 0 0 1 10 10" />
+          </svg>
+          <p>https://ahmadsaefudin.github.io/</p>
+        </div>
+      </div>
+
+      <form class="space-y-6 text-slate-300 bg-zinc-900 p-8 rounded-lg shadow-lg" id="contactForm" onsubmit="submitMessage(event)">
+        <div>
+          <label for="name" class="block mb-2 font-semibold">Your Name</label>
+          <input type="text" name="name" id="name" required class="w-full rounded-md border border-zinc-700 bg-[#18202e] p-3 focus:ring-2 focus:ring-cyan-500 outline-none" placeholder="Enter your full name" />
+        </div>
+        <div>
+          <label for="email" class="block mb-2 font-semibold">Your Email</label>
+          <input type="email" name="email" id="email" required class="w-full rounded-md border border-zinc-700 bg-[#18202e] p-3 focus:ring-2 focus:ring-cyan-500 outline-none" placeholder="Enter your email" />
+        </div>
+        <div>
+          <label for="subject" class="block mb-2 font-semibold">Subject</label>
+          <input type="text" name="subject" id="subject" class="w-full rounded-md border border-zinc-700 bg-[#18202e] p-3 focus:ring-2 focus:ring-cyan-500 outline-none" placeholder="Subject of your message" />
+        </div>
+        <div>
+          <label for="message" class="block mb-2 font-semibold">Your Message</label>
+          <textarea name="message" id="message" rows="5" class="w-full resize-none rounded-md border border-zinc-700 bg-[#18202e] p-3 focus:ring-2 focus:ring-cyan-500 outline-none" placeholder="Write your message here" required></textarea>
+        </div>
+        <button type="submit" class="w-full bg-gradient-to-r from-blue-400 to-purple-500 py-3 rounded-full font-bold hover:brightness-110 transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-zinc-900 py-8 mt-4 text-center text-slate-400">
+    <p class="mb-4 text-lg font-extrabold text-cyan-400">Ahmad Saefudin</p>
+    <div class="flex justify-center space-x-6 mb-4">
+      <a href="https://github.com/ahmadsaefudin" target="_blank" rel="noopener noreferrer" aria-label="GitHub Link" class="hover:text-cyan-400 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12 0C5.37 0 0 5.44 0 12.16c0 5.37 3.438 9.926 8.205 11.533.6.112.82-.263.82-.583 0-.288-.01-1.05-.015-2.06-3.338.746-4.042-1.64-4.042-1.64-.546-1.39-1.333-1.76-1.333-1.76-1.09-.763.083-.748.083-.748 1.205.087 1.84 1.262 1.84 1.262 1.07 1.86 2.807 1.32 3.492 1.006.108-.79.418-1.32.76-1.624-2.665-.309-5.466-1.372-5.466-6.11 0-1.35.468-2.456 1.236-3.32-.124-.309-.536-1.548.116-3.228 0 0 1.007-.328 3.3 1.259a11.33 11.33 0 0 1 3-.412c1.02.005 2.047.138 3 .412 2.29-1.587 3.294-1.26 3.294-1.26.655 1.68.243 2.92.12 3.23.77.865 1.234 1.97 1.234 3.317 0 4.75-2.807 5.797-5.48 6.103.43.37.814 1.1.814 2.22 0 1.603-.014 2.896-.014 3.29 0 .323.215.7.825.58C20.565 22.08 24 17.528 24 12.16 24 5.44 18.627 0 12 0z" />
+        </svg>
+      </a>
+      <a href="https://linkedin.com/in/ahmadsaefudin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Link" class="hover:text-cyan-400 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.025-3.036-1.852-3.036-1.853 0-2.136 1.445-2.136 2.941v5.664H9.352V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.598 0 4.261 2.369 4.261 5.45v6.291zM5.337 7.433a2.07 2.07 0 1 1-.001-4.139 2.07 2.07 0 0 1 .001 4.139zM6.985 20.453H3.685V9h3.3v11.453zM22.225 0H1.771C.792 0 0 .77 0 1.717v20.546C0 23.227.792 24 1.771 24h20.451C23.208 24 24 23.227 24 22.263V1.717C24 .77 23.208 0 22.225 0z" />
+        </svg>
+      </a>
+      <a href="https://instagram.com/ahmadsaefudin" target="_blank" rel="noopener noreferrer" aria-label="Instagram Link" class="hover:text-cyan-400 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5Zm7.0002 6.5a1.25 1.25 0 1 1-2.5004 0 1.25 1.25 0 0 1 2.5004 0Zm-3.9998.75a4.25 4.25 0 1 1 0 8.5 4.25 4.25 0 0 1 0-8.5Zm0 6a1.75 1.75 0 1 0 0-3.5 1.75 1.75 0 0 0 0 3.5Z" />
+        </svg>
+      </a>
+      <a href="https://vm.tiktok.com/ahmadsaefudin" target="_blank" rel="noopener noreferrer" aria-label="TikTok Link" class="hover:text-cyan-400 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2v7.25a3.75 3.75 0 1 0 3.75 3.75V4.625H18a6 6 0 1 1-6-2.625zM10 17.875a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0z" />
+        </svg>
+      </a>
+    </div>
+    <p class="text-sm text-slate-500 mt-6 select-none">© 2025 Ahmad Saefudin. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Contact form submission handler (mock)
+    function submitMessage(event) {
+      event.preventDefault();
+      alert('Thank you for reaching out, ' + event.target.name.value + '! Your message has been received.');
+      event.target.reset();
+    }
+  </script>
+</body>
+
+</html>
+
