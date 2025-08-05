@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ahmada Saefudin - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind config for gradient text and dark mode support with system preference fallback
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#14b8a6",
+            secondary: "#22d3ee",
+            accent: "#818cf8",
+          },
+          backgroundImage: {
+            "gradient-rainbow":
+              "linear-gradient(90deg, #14b8a6 0%, #22d3ee 50%, #818cf8 100%)",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    /* Scrollbar styling for modern browsers */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #22d3eeaa;
+      border-radius: 100px;
+    }
+
+    /* Transition for theme toggle button rotation */
+    #theme-toggle {
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-[#0f172a] text-slate-200 font-sans selection:bg-primary selection:text-slate-900 transition-colors duration-300">
+  <header class="fixed top-0 left-0 w-full bg-slate-700 bg-opacity-80 backdrop-blur z-30 shadow-md">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+      <a href="#" class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+        Ahmada <span class="text-secondary">Saefudin</span>
+      </a>
+      <ul class="hidden md:flex gap-8 text-sm font-medium">
+        <li><a href="#home" class="hover:text-secondary transition">Home</a></li>
+        <li><a href="#about" class="hover:text-secondary transition">About</a></li>
+        <li><a href="#projects" class="hover:text-secondary transition">Projects</a></li>
+        <li><a href="#skills" class="hover:text-secondary transition">Skills</a></li>
+        <li><a href="#github" class="hover:text-secondary transition">GitHub</a></li>
+        <li><a href="#certificates" class="hover:text-secondary transition">Certificates</a></li>
+        <li><a href="#testimonials" class="hover:text-secondary transition">Testimonials</a></li>
+        <li><a href="#contact" class="hover:text-secondary transition">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle Dark Mode" class="ml-4 rounded-full p-2 bg-gradient-to-tr from-primary to-secondary text-black hover:rotate-12 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+        <svg id="theme-toggle-dark-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m8.66-9h-1M4.34 12h-1m14.07 5.36l-.7-.7M6.34 6.34l-.7-.7m12.02 12.02l-.7-.7M6.34 17.66l-.7-.7M12 7a5 5 0 100 10 5 5 0 000-10z" />
+        </svg>
+        <svg id="theme-toggle-light-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main class="pt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Home Hero Section -->
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center relative">
+      <p class="text-gray-400 mb-2">Hello, I'm</p>
+      <h1 class="text-5xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary mb-1">
+        Ahmada Saefudin
+      </h1>
+      <p class="text-xl text-secondary mb-8">
+        Network Administrator & Web Developer
+      </p>
+      <div class="flex gap-4 justify-center">
+        <a href="#projects" class="bg-gradient-to-r from-primary to-secondary text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition-all shadow-lg">
+          View My Work
+        </a>
+        <a href="#contact" class="border border-primary px-6 py-3 rounded-full text-primary font-semibold hover:bg-primary hover:text-black transition-all shadow-lg">
+          Contact Me
+        </a>
+      </div>
+      <div class="absolute bottom-4 animate-bounce" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="pt-16 pb-16 max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10">
+      <div class="flex justify-center md:justify-start w-full md:w-1/3 relative">
+        <div class="rounded-full border-4 border-primary overflow-hidden w-60 h-60 shadow-lg relative z-10">
+          <img src="https://placehold.co/240x240/png?text=Ahmada+Saefudin+Portrait" alt="Portrait of Ahmada Saefudin standing with a scenic misty mountain background, bright colors, digital art, semi-realistic style" class="object-cover w-full h-full" onerror="this.onerror=null;this.src='https://placehold.co/240x240?text=Image+Unavailable';" />
+        </div>
+        <div class="absolute bg-primary rounded-full w-6 h-6 top-10 left-10"></div>
+        <div class="absolute bg-secondary rounded-full w-5 h-5 top-20 left-28"></div>
+      </div>
+      <div class="flex flex-col w-full md:w-2/3 text-slate-300">
+        <h2 class="text-3xl font-extrabold text-primary mb-6">About Me</h2>
+        <p class="text-lg leading-relaxed mb-6">
+          I'm <span class="font-semibold text-secondary">Ahmada Saefudin</span>, a Web Developer and Network Administrator. I specialize in building exceptional digital experiences that live on the internet. Creating elegant, efficient, and user-friendly applications is my passion, and I bring ideas to life with code.
+        </p>
+        <p class="mb-6">
+          With hands-on experience through various projects and freelance work, I combine technical skills with creative problem-solving to deliver effective and engaging solutions. I enjoy the challenge of making complex technologies simple and accessible.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+          <div class="flex items-center gap-3 bg-slate-800 p-4 rounded shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 12.414a4 4 0 10-5.657 5.657z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            <span>Banjarmasin, Indonesia</span>
+          </div>
+          <div class="flex items-center gap-3 bg-slate-800 p-4 rounded shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16 12v1a4 4 0 11-8 0v-1" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v3" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 12v1a7 7 0 11-14 0v-1" />
+            </svg>
+            <span>tpublicml@gmail.com</span>
+          </div>
+          <div class="flex items-center gap-3 bg-slate-800 p-4 rounded shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 13h6l-2 8 6-15h-6l2-8z" />
+            </svg>
+            <span>+62 852 4886 7449</span>
+          </div>
+          <div class="flex items-center gap-3 bg-slate-800 p-4 rounded shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 14v7" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 14L3 9" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 9l-9 5" />
+            </svg>
+            <span>Informatic Engineering, Politeknik Negeri Banjarmasin</span>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="flex items-center gap-2 bg-gradient-to-r from-primary to-secondary px-6 py-3 rounded-full text-black font-semibold hover:scale-105 transition shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 18v-6h6v6H9z"/></svg> Download CV
+          </a>
+          <a href="#contact" class="flex items-center gap-2 border border-primary px-6 py-3 rounded-full text-primary font-semibold hover:bg-primary hover:text-black transition shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7-7 7M5 12h16"/></svg>
+            Hire Me
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 max-w-7xl mx-auto">
+      <h2 class="text-3xl font-extrabold text-primary mb-12 text-center">My Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Project Card Template -->
+        <article class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col">
+          <div class="rounded-lg overflow-hidden shadow-md mb-4 relative">
+            <img src="https://placehold.co/400x240/png?text=ChatBot+Project" alt="ChatBot application interface with conversational UI, modern dark themed dashboard style" class="w-full object-cover h-40" onerror="this.onerror=null;this.src='https://placehold.co/400x240?text=Image+Unavailable';" />
+            <span class="absolute top-2 right-2 bg-green-500 text-white rounded-full px-3 py-1 text-xs font-semibold shadow-lg">New</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-100 mb-2">AI ChatBot by Ahmada Saefudin</h3>
+          <p class="text-slate-300 flex-grow mb-4 text-sm leading-relaxed">
+            An intelligent AI-powered chatbot designed to interact naturally with users using natural language processing. Integrates modern AI techniques and user-friendly UI/UX.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="text-xs font-semibold px-2 py-1 bg-yellow-500 rounded text-black">HTML</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-blue-600 rounded">CSS</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-yellow-400 rounded text-black">JavaScript</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-purple-600 rounded text-white">Gemini API</span>
+          </div>
+          <div class="flex gap-4">
+            <a href="#" target="_blank" class="flex-1 bg-gradient-to-r from-primary to-secondary text-black text-center py-2 rounded font-semibold shadow hover:scale-105 transition">Demo</a>
+            <a href="#" target="_blank" class="flex-1 border border-primary text-primary text-center py-2 rounded font-semibold shadow hover:bg-primary hover:text-black transition">Code</a>
+          </div>
+        </article>
+
+        <article class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col">
+          <div class="rounded-lg overflow-hidden shadow-md mb-4 relative">
+            <img src="https://placehold.co/400x240/png?text=Education+System" alt="Dashboard of Outcome-Based Education Curriculum design Information System with charts and menus" class="w-full object-cover h-40" onerror="this.onerror=null;this.src='https://placehold.co/400x240?text=Image+Unavailable';" />
+            <span class="absolute top-2 right-2 bg-orange-500 text-white rounded-full px-3 py-1 text-xs font-semibold shadow-lg">Website</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-100 mb-2">Sistem Informasi Kurikulum OBE</h3>
+          <p class="text-slate-300 flex-grow mb-4 text-sm leading-relaxed">
+            Outcome-Based Education Curriculum Design system developed to support curriculum development aligned with OBE principles.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="text-xs font-semibold px-2 py-1 bg-orange-500 rounded text-white">HTML</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-sky-600 rounded">Tailwind CSS</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-yellow-400 rounded text-black">JavaScript</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-indigo-700 rounded">MySQL</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-purple-900 rounded">PHP</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-red-600 rounded">Laravel</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-pink-600 rounded">Figma</span>
+          </div>
+          <div class="flex gap-4">
+            <a href="#" target="_blank" class="flex-1 bg-gradient-to-r from-primary to-secondary text-black text-center py-2 rounded font-semibold shadow hover:scale-105 transition">Demo</a>
+            <a href="#" target="_blank" class="flex-1 border border-primary text-primary text-center py-2 rounded font-semibold shadow hover:bg-primary hover:text-black transition">Code</a>
+          </div>
+        </article>
+
+        <article class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col">
+          <div class="rounded-lg overflow-hidden shadow-md mb-4 relative">
+            <img src="https://placehold.co/400x240/png?text=LAN+Design" alt="Complex LAN network architecture diagram using Cisco Packet Tracer with VLAN and subnetting" class="w-full object-cover h-40" onerror="this.onerror=null;this.src='https://placehold.co/400x240?text=Image+Unavailable';" />
+            <span class="absolute top-2 right-2 bg-teal-500 text-white rounded-full px-3 py-1 text-xs font-semibold shadow-lg">Network</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-100 mb-2">Large-Scale LAN Design Using Cisco</h3>
+          <p class="text-slate-300 flex-grow mb-4 text-sm leading-relaxed">
+            Models large-scale LAN design with Cisco Packet Tracer focusing on connectivity, scalability, and network management in corporate environment.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="text-xs font-semibold px-2 py-1 bg-sky-700 rounded">Cisco</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-red-600 rounded">VLAN</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-green-500 rounded">Subnetting</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-purple-600 rounded">Simulation</span>
+          </div>
+          <div class="flex gap-4">
+            <a href="#" target="_blank" class="flex-1 bg-pink-600 text-white text-center py-2 rounded font-semibold shadow hover:scale-105 transition">Demo</a>
+            <button disabled class="flex-1 border border-gray-600 text-gray-600 text-center py-2 rounded font-semibold cursor-not-allowed">File</button>
+          </div>
+        </article>
+
+        <article class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col">
+          <div class="rounded-lg overflow-hidden shadow-md mb-4 relative">
+            <img src="https://placehold.co/400x240/png?text=Snakes+and+Ladders+Game" alt="Colorful web-based Snakes and Ladders classic board game UI with interactive features and animations" class="w-full object-cover h-40" onerror="this.onerror=null;this.src='https://placehold.co/400x240?text=Image+Unavailable';" />
+            <span class="absolute top-2 right-2 bg-pink-500 text-white rounded-full px-3 py-1 text-xs font-semibold shadow-lg">Game</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-100 mb-2">Snakes And Ladders Game</h3>
+          <p class="text-slate-300 flex-grow mb-4 text-sm leading-relaxed">
+            Web-based Snakes and Ladders game built with HTML, CSS and JavaScript. Supports two players and features smooth animations and responsive layout.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="text-xs font-semibold px-2 py-1 bg-orange-500 rounded">HTML</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-blue-600 rounded">CSS</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-yellow-400 rounded text-black">JavaScript</span>
+          </div>
+          <div class="flex gap-4">
+            <a href="#" target="_blank" class="flex-1 bg-gradient-to-r from-primary to-secondary text-black text-center py-2 rounded font-semibold shadow hover:scale-105 transition">Demo</a>
+            <a href="#" target="_blank" class="flex-1 border border-primary text-primary text-center py-2 rounded font-semibold shadow hover:bg-primary hover:text-black transition">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-extrabold text-primary mb-12">My Skills</h2>
+      <p class="text-xl font-semibold mb-8 text-secondary">Technical Skills</p>
+      <div class="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-8 gap-6 max-w-5xl mx-auto justify-items-center">
+        <!-- Skill Item Template, icons are copied from simple icons or official logos using svg inline -->
+        <div class="bg-slate-800 w-20 h-20 rounded-md shadow-lg flex flex-col items-center justify-center p-3 hover:scale-110 transition-transform cursor-default">
+          <svg aria-hidden="true" class="w-10 h-10 mb-2" fill="#E44D26" viewBox="0 0 24 24">
+            <path d="M1.5 0h21l-1.909 21.5L12 24l-8.591-2.5L1.5 0zM19 19l-1.23-13H7.228L6.001 19L12 21l6.998-2zM12.167 6l.017 3.561H9.836L10 13.097h3.999l-.494 3.561L12 17.113l-3.262-.9-.224-1.396h-2.2l.412 2.32 4.572 1.281 4.606-1.281L17 11.07H8.005l-.11-1.834h8.336V6H12.167z"/>
+          </svg>
+          <span class="text-xs font-semibold">HTML5</span>
+          <div class="h-1 w-full rounded bg-gradient-to-r from-primary to-secondary mt-1"></div>
+        </div>
+
+        <div class="bg-slate-800 w-20 h-20 rounded-md shadow-lg flex flex-col items-center justify-center p-3 hover:scale-110 transition-transform cursor-default">
+          <svg aria-hidden="true" class="w-10 h-10 mb-2" fill="#3178C6" viewBox="0 0 24 24">
+            <path d="M4.5 0h15a4.5 4.5 0 014.5 4.5v15a4.5 4.5 0 01-4.5 4.5h-15A4.5 4.5 0 010 19.5v-15A4.5 4.5 0 014.5 0zM20 19.5V4.5H4v15z"/>
+          </svg>
+          <span class="text-xs font-semibold">Tailwind CSS</span>
+          <div class="h-1 w-full rounded bg-gradient-to-r from-primary to-secondary mt-1"></div>
+        </div>
+
+        <div class="bg-slate-800 w-20 h-20 rounded-md shadow-lg flex flex-col items-center justify-center p-3 hover:scale-110 transition-transform cursor-default">
+          <svg aria-hidden="true" class="w-10 h-10 mb-2" fill="#F7DF1E" viewBox="0 0 24 24">
+            <path d="M12 0C5.372 0 0 5.372 0 12c0 6.627 5.372 12 12 12s12-5.373 12-12c0-6.628-5.372-12-12-12zM13.89 17.112a2.828
